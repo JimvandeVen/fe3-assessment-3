@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>@LeonvanZijl</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="right">
+		<div id="map"></div>
+		<div class="container">
+			<span class="addressTooltip"></span>
+			<svg class="svgMap" width="1100" height="960"></svg>
+		</div>
+		<div class="legenda">
+			<h1>Legenda</h1>
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			<i class="fa fa-chevron-up chevronHide" aria-hidden="true"></i>
+			<div class="bom typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Bom, granaat, afweergeschut</span>
+			</div>
+			<div class="neergestort typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Vliegtuig(onderdeel) neergestort</span>
+			</div>
+			<div class="omgevingschade typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Omgevingsschade</span>
+			</div>
+			<div class="mitrailleurvuur typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Mitrailleurvuur</span>
+			</div>
+			<div class="luchtaanval typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Luchtaanval</span>
+			</div>
+			<div class="overig typeLegenda">
+				<div class="typeIndicatorLegenda"></div>
+				<span>Overig</span>
+			</div>
+			<label style="left: 16px; top: 16px;"><input type="checkbox"> Satellietbeelden</label>
+		</div>
+		<div class="popup">
+			<div class="typeIndicator"></div>
+			<h1 class="address"></h1>
+			<div class="info">
+				<span class="label">Soort</span>
+				<span class="typeAnswer"></span>
+			</div>
+			<div class="info">
+				<span class="label">Datum</span>
+				<span class="dateAnswer"></span>
+			</div>
+			<div class="info">
+				<span class="label">Omschrijving</span>
+				<span class="descriptionAnswer"></span>
+			</div>
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="left">
+		<span class="timeline">Tijdlijn</span>
+		<span class="explanation">Hover die shit 👆🏻</span>
+		<svg class="svgBar" width="200" height="960"></svg>
+	</div>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/topojson-client@3"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js"></script>
+	<script src="index.js"></script>
+</body>
