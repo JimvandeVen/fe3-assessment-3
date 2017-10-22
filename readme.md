@@ -10,7 +10,7 @@
 ## **Background**
 In this assignment I’ve created an interactive datavisualisation of the bombings on Amsterdam in World War II. I've used a map to present the geolocation of each bombing and a bar chart to show how many bombings each month occurred. Together with this you can click on each bombing to get some more information.
 
-P.S. Some of the vocabulary could be quite sloppy at one point, my excuses in advance. Most of this is written after 1PM 🌚
+P.S. Some of the vocabulary could be quite sloppy at one point, my excuses in advance.
 
 ---
 
